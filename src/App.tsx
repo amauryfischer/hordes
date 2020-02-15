@@ -1,17 +1,15 @@
+import { Container } from "@material-ui/core";
 import React, { FunctionComponent, useReducer } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Maison from "./route/Maison/Maison";
+import { addTodo } from "./redux/todo/action";
 import { TodosContext } from "./redux/todo/context";
 import todoReducer from "./redux/todo/reducer";
 import { TodosState } from "./redux/todo/type";
-import { BlueButton } from "./share/style/components/buttons";
-import { addTodo } from "./redux/todo/action";
+import Maison from "./route/Maison/Maison";
 import AppBackground from "./share/components/AppBackground";
-import { Row, Col } from "reactstrap";
 import Navigator from "./share/components/Navigator/Navigator";
-import { FlexRow } from "./share/style/components/flex";
-import { Container } from "@material-ui/core";
 import StatusBar from "./share/components/StatusBar";
+import { FlexRow } from "./share/style/components/flex";
 
 const App: FunctionComponent<{}> = () => {
   const initialTodos: TodosState = {

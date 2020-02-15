@@ -6,7 +6,7 @@ const Navigator: FunctionComponent<{}> = () => {
     {
       title: "Ma maison",
       image: "/maison.gif",
-      link: "/maison",
+      link: "/maison/coffre",
     },
     {
       title: "Puit",

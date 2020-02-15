@@ -9,6 +9,7 @@ import { DARK_BROWN, LIGHT_TEXT, BROWN } from "../../share/style/color";
 import { HordeButton } from "../../share/style/components/buttons";
 import { HordeCard } from "../../share/style/components/card";
 import HordeAction from "../../share/components/HordeAction";
+import TabContainer from "./TabContainer";
 
 const Maison: FunctionComponent<{}> = () => {
   const { state, dispatch } = useContext(TodosContext);
@@ -17,6 +18,7 @@ const Maison: FunctionComponent<{}> = () => {
     <>
       <Container>
         <HordeCard>
+          <TabContainer />
           <HordeButton size="small">
             <div>test</div>
           </HordeButton>
